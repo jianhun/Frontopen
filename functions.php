@@ -1114,7 +1114,7 @@ function tagnoCallback($matches) {
 $text=$matches[1];
 preg_match('|title=(.+?)style|i',$text ,$a);
 preg_match("/\d+/",$a[1],$a);
-return "<a ".$text ." (".$a[0].")</a> ";
+return "<a ".$text ."</a> ";
 }
 add_filter('wp_tag_cloud', 'Tagno', 1);
 
